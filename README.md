@@ -1,4 +1,6 @@
 Bonjour et bienvenue à l'équipe Gilded Rose.
+-----
+
 Comme vous le savez, nous sommes une petite auberge, avec un emplacement de premier choix, dans une ville importante,
 tenu par un ami aubergiste nommé Allison. De plus, nous achetons et vendons uniquement les meilleurs produits.
 
@@ -12,6 +14,7 @@ Votre tache est d'ajouter une nouvelle fonctionnalité à notre système pour fa
 une nouvelle catégorie d'objet.
 
 Tout d'abord, une introduction à notre système :
+----
 
 - Tous les objets ont un champ de date de vente nommé `SellIn` qui représente le nombre de jours que nous ayons pour vendre l'objet.
 - Tous les objets ont un champ qualité nommé `Quality` qui représente la valeur de l'objet.
@@ -28,22 +31,24 @@ Plutôt simple, non ? Et bien, c'est là que ça devient intéressant :
 La qualié augmente de 2 quand il reste moins de 10 jours (inclu), et par 3 quand il reste moins de 5 jours (inclu)
 mais la qualité chute à 0 après le concert
 
-Nous avons dernièrement signé avec un fournisseur d'objets conjurés.Cela nécessite une mise à jour de notre système.
+Nous avons dernièrement signé avec un fournisseur d'objets conjurés. Cela nécessite une mise à jour de notre système.
 
 - Les objets "Conjurés" perdent leurs qualités deux fois plus vite que les objets normaux.
 
 Vous êtes libre de faire n'importe quelle modification sur la méthode `UpdateQuality` et
 d'ajouter n'importe quel nouveau code, tant que l'ensemble marche correctement.
 
-Cependant, ne modifier pas la class `Item` ou le champ `Items` sachant que ceux ci appartiennent
+Cependant, ne modifiez pas la class `Item` ou le champ `Items` sachant que ceux ci appartiennent
  au goblin du coin qui entrera dans une rage instantaté et vous tuera, étant donné qu'il ne crois pas
- au shared code ownership. (Vous pouvez rentrer la méthode `UpdateQuality` et le champ `Items` static si vous le voulez,
+ au shared code ownership. (Vous pouvez rendre la méthode `UpdateQuality` et le champ `Items` static si vous le souhaitez,
  on assumera pour vous).
 
  Votre travail se devra d'être fini pour très bien bientôt.
 
  Uniquement pour clarrifier les choses, un objet ne pourra avoir une qualité supérieur à 50, cependant,
  "Sulfuras" est un objet légendaire, c'est pourquoi sa qualité est de 80 et ne pourra jamais être altéré.
+
+
 
 ```java
 public class GildedRose {
