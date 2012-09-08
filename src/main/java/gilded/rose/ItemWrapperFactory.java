@@ -1,9 +1,6 @@
 package gilded.rose;
 
-import gilded.rose.strategy.AgedBrieStrategy;
-import gilded.rose.strategy.BackstageStrategie;
-import gilded.rose.strategy.DefaultStrategy;
-import gilded.rose.strategy.SulfurasStrategy;
+import gilded.rose.strategy.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,6 +18,8 @@ public class ItemWrapperFactory {
             return new ItemWrapper(item, new BackstageStrategie());
         } else if (item.getName().contains("Sulfuras")) {
             return new ItemWrapper(item, new SulfurasStrategy());
+        } else if (item.getName().contains("Conjured")) {
+            return new ItemWrapper(item, new ConjuredStrategy());
         }
         return new ItemWrapper(item, new DefaultStrategy());
     }

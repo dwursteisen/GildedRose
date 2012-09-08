@@ -24,4 +24,8 @@ public class ItemWrapper {
         this.strategy.updateQuality(item);
     }
 
+
+    public void updateSellIn() {
+        this.strategy.updateSellIn(item);
+    }
 }

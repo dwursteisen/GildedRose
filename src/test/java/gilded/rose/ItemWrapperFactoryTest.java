@@ -1,9 +1,6 @@
 package gilded.rose;
 
-import gilded.rose.strategy.AgedBrieStrategy;
-import gilded.rose.strategy.BackstageStrategie;
-import gilded.rose.strategy.DefaultStrategy;
-import gilded.rose.strategy.SulfurasStrategy;
+import gilded.rose.strategy.*;
 import org.junit.Test;
 
 import static org.fest.assertions.Assertions.assertThat;
@@ -40,5 +37,11 @@ public class ItemWrapperFactoryTest {
     public void buildBackstageItem() {
         ItemWrapper wrapper = new ItemWrapperFactory().build(new Item("Backstage passes to a TAFKAL80ETC concert", 20, 20));
         assertThat(wrapper.strategy).isInstanceOf(BackstageStrategie.class);
+    }
+
+    @Test
+    public void buildConjuredItem() {
+        ItemWrapper wrapper = new ItemWrapperFactory().build(new Item("Conjured Mana Cake", 20, 20));
+        assertThat(wrapper.strategy).isInstanceOf(ConjuredStrategy.class);
     }
 }
