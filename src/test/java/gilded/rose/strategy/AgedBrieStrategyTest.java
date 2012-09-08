@@ -36,5 +36,13 @@ public class AgedBrieStrategyTest {
         assertThat(item.getQuality()).isEqualTo(21);
     }
 
+    @Test
+    public void should_decrease_sellin() {
+        Item item = new Item("blabla", 12, 20);
+        item.setSellIn(10);
+        strategy.updateSellIn(item);
+        assertThat(item.getSellIn()).isEqualTo(9);
+    }
+
 
 }

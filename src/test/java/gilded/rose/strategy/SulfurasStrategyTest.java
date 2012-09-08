@@ -20,8 +20,10 @@ public class SulfurasStrategyTest {
         Item blabla = new Item("blabla", 20, 15);
         SulfurasStrategy strategy = new SulfurasStrategy();
         strategy.updateQuality(blabla);
-
+        strategy.updateSellIn(blabla);
         assertThat(blabla.getQuality()).isEqualTo(15);
+        assertThat(blabla.getSellIn()).isEqualTo(20);
 
     }
+
 }

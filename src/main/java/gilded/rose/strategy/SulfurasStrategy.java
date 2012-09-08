@@ -14,4 +14,9 @@ public class SulfurasStrategy implements Strategy {
     public void updateQuality(Item item) {
         //To change body of implemented methods use File | Settings | File Templates.
     }
+
+    @Override
+    public void updateSellIn(Item item) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
 }

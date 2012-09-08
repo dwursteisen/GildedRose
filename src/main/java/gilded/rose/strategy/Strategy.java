@@ -12,4 +12,6 @@ import gilded.rose.Item;
 public interface Strategy {
 
     void updateQuality(Item item);
+
+    void updateSellIn(Item item);
 }

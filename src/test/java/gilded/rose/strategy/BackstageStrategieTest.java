@@ -51,4 +51,11 @@ public class BackstageStrategieTest {
         assertThat(item.quality).isEqualTo(0);
     }
 
+    @Test
+    public void should_decrease_sellin() {
+        item.setSellIn(10);
+        strategie.updateSellIn(item);
+        assertThat(item.getSellIn()).isEqualTo(9);
+    }
+
 }

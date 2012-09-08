@@ -65,4 +65,12 @@ public class DefaultStrategyTest {
     }
 
 
+    @Test
+    public void should_decrease_sellin() {
+        item.setSellIn(10);
+        strategy.updateSellIn(item);
+        assertThat(item.getSellIn()).isEqualTo(9);
+    }
+
+
 }

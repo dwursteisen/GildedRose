@@ -28,4 +28,9 @@ public class DefaultStrategy implements Strategy {
             item.setQuality(quality - 1);
         }
     }
+
+    @Override
+    public void updateSellIn(Item item) {
+        item.setSellIn(item.getSellIn() - 1);
+    }
 }
