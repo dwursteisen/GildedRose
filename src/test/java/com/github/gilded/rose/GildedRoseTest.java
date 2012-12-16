@@ -1,3 +1,5 @@
+package com.github.gilded.rose;
+
 import org.junit.Test;
 
 
