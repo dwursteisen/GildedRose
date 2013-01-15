@@ -1,2 +1,20 @@
 GitHub : https://github.com/dwursteisen/GildedRose
 BuildHive : https://buildhive.cloudbees.com/
+
+
+0) Votre mission, si vous l'acceptez... Rajouter un item qui met toujours la quality a 100
+
+
+
+1) Mettre le projet sur BuildHives
+2) Montrer infinitest
+3) faire une premiere assertion, la remplacer par fest assert
+4) montrer la couverture de code
+5) augmenter la couverture de code
+
+
+----
+
+6) remplacer le for par for each
+7) introduire un objet
+8) changer les ifs

@@ -16,6 +16,17 @@ public class GildedRose {
         System.out.println("OMGHAI!");
         GildedRose inn = new GildedRose();
         inn.updateQuality();
+        inn.updateQuality();
+        inn.updateQuality();
+        inn.updateQuality();
+        inn.updateQuality();
+        inn.updateQuality();
+        inn.updateQuality();
+        inn.updateQuality();
+        inn.updateQuality();
+        inn.updateQuality();
+        inn.updateQuality();
+        System.out.println(inn);
     }
 
     public GildedRose() {
@@ -31,6 +42,12 @@ public class GildedRose {
         return items;
     }
 
+    /**
+     * Votre mission, si vous l'acceptez...
+     * <p/>
+     * Ajouter un item magique avec le nom "Toujours A Sang"
+     * qui, quoi qu'il arrive, aura toujours une qualité à 100
+     */
     public void updateQuality() {
         for (int i = 0; i < items.size(); i++) {
             if ((!"Aged Brie".equals(items.get(i).getName())) && !"Backstage passes to a TAFKAL80ETC concert".equals(items.get(i).getName())) {
@@ -83,4 +100,10 @@ public class GildedRose {
         }
     }
 
+    @Override
+    public String toString() {
+        return "GildedRose{" +
+                "items=\n" + items +
+                '}';
+    }
 }
