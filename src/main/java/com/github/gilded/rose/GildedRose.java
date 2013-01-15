@@ -27,6 +27,10 @@ public class GildedRose {
         items.add(new Item("Conjured Mana Cake", 3, 6));
     }
 
+    public List<Item> getItems() {
+        return items;
+    }
+
     public void updateQuality() {
         for (int i = 0; i < items.size(); i++) {
             if ((!"Aged Brie".equals(items.get(i).getName())) && !"Backstage passes to a TAFKAL80ETC concert".equals(items.get(i).getName())) {
